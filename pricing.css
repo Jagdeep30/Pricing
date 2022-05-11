@@ -30,3 +30,208 @@ body{
     font-family: "Montserrat";
     font-weight: 700;
   }
+
+  /* PRICING */
+
+#pricing{
+  text-align: center;
+  padding: 100px;
+}
+
+.pricing-heading{
+  font-weight: 900;
+  font-size: 3rem;
+}
+
+.card-head{
+  font-weight: 900;
+  color: white;
+}
+.card-header{
+  background: var(--primary-bg-color) !important;
+}
+
+.price{
+  font-weight: 900;
+  font-size: 40px;
+}
+.card{
+  border:solid black 10px;
+}
+
+.sign-up:hover{
+  background-color: var(--primary-bg-color) !important;
+}
+
+/* .card-image{
+    width: 286px; 
+    height: 280px;
+} */
+
+#cta{
+  background-color: var(--primary-bg-color);
+  text-align: center;
+  padding: 7%;
+}
+
+#cta h3{
+  color: var(--text-color);
+  font-size: 3.5rem;
+  font-weight: 900;
+  line-height: 1.5;
+}
+
+#footer{
+  padding: 5%;
+  text-align: center;
+}
+
+.social-icon{
+  margin: 20px 15px;
+  font-size:30px;
+}
+
+.social-icon:hover{
+  color: var(--primary-bg-color);
+  transform: rotate(360deg);
+  transition:1s;
+}
+
+.copyright{
+    display: inline-block;
+    padding: 1%;
+    
+}
+.copyright:hover{
+  background-color: var(--primary-bg-color);
+  color: var(--text-color);
+  transition: 1s;
+  border-radius: 20px;
+}
+
+@media screen and (max-width:1028px){
+  #title{
+    text-align: center;
+  }
+
+  .title-image{
+    position: static;
+    transform: rotate(0);
+  }
+}
+
+/* CONTACTS */
+#contact p{
+  display: inline-block;
+  color: var(--text-color);
+  /* padding: 0px 10px; */
+}
+#contact{
+  text-align: center;
+  background-color:var(--primary-bg-color);
+  font-family: 'Montserrat';
+  padding: 10px;
+}
+#contact a{
+  color:burlywood;
+}
+
+.team{
+  font-weight: 900;
+}
+
+
+
+
+
+
+/* ANIMATIONS */
+
+.title-image{
+    animation: slide 2s 1;
+}
+
+@keyframes slide{
+    0%{
+        margin-right: -600px;
+        overflow:hidden;
+    }
+    50%{
+        margin-right: 0px;
+        transform: rotate(25deg);
+    }
+    75%{
+        transform: rotate(-25deg);
+    }
+    80%{
+        transform: rotate(25deg);
+    }
+    90%{
+        transform: rotate(-25deg);
+    }
+    100%{
+        transform: rotate(25deg);
+    }
+}
+
+.pic-nav,.brand-title{
+    animation: slide-left-in 1s 1;
+}
+
+@keyframes slide-left-in{
+    0%{
+        margin-left: -200px;
+    }
+    100%{
+        margin-left: 0px;
+    }
+}
+
+
+
+
+.download-button{
+  animation: shake 0.3s 3s 1;
+}
+
+@keyframes shake{
+  0%{
+    transform: rotate(10deg);
+  }
+  25%{
+    transform: rotate(-10deg);
+  }
+  50%{
+    transform: rotate(10deg);
+  }
+  75%{
+    transform: rotate(-10deg);
+  }
+  100%{
+    transform: rotate(0deg);
+  }
+}
+
+
+.change-theme{
+  font-size: 1.3rem;
+  cursor:pointer;
+  transition: .7s;
+}
+
+body.dark-theme{
+
+  --text-color: white;
+  --para-color: #8f8f8f;
+  --primary-bg-color:black;
+  /* --secondary-bg-color:#9e1806; */
+}
+
+.welcome{
+background-color: black;
+}
+
+.welcome-page{
+  background-color: black;
+
+}
