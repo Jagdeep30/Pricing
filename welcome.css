@@ -1,0 +1,52 @@
+
+body{
+    overflow-y: hidden;
+}
+
+.wrapper {
+    height: 50vh;
+    /*This part is important for centering*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .typing-demo {
+    width: 55ch;
+    animation: typing 2s steps(26), blink .5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+    font-family: monospace;
+    font-size: 2em;
+  }
+  
+  @keyframes typing {
+    from {
+      width: 0
+    }
+  }
+      
+  @keyframes blink {
+    50% {
+      border-color: transparent
+    }
+  }
+
+  .btn{
+          border: none;
+          background: none;
+          padding:30px;
+          background-color:pink;
+          border-radius: 55px;
+          cursor: pointer;
+          color: white;
+          font-weight: bolder;
+          font-size: 40px;
+          transition: all 0.3s;
+  }
+
+  .btn:hover{
+          /* box-shadow:  black 2px 2px 5px; */
+          background-color: rgb(255, 148, 166);
+  }

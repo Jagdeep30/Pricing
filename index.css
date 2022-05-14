@@ -1,0 +1,436 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:wght@300;400;500;700&display=swap');
+
+/* body {
+    font-family: "Montserrat";
+  } */
+
+:root{
+
+  --hue-color: 250;
+  /* --sec-hue-color:342; */
+
+
+  --text-color: white;
+  --para-color: #8f8f8f;
+  --primary-bg-color: hsl(var(--hue-color), 69%, 61%);
+  /* --secondary-bg-color:hsl(var(--hue-color), 100%, 45%); */
+  
+}
+
+body{
+  transition: all 0.7s;
+}
+  
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: "Montserrat";
+    font-weight: 700;
+  }
+  
+  .feature-box h3 {
+    font-size: 1.5rem;
+    font-weight:900;
+  }
+  
+  h2 {
+    font-size: 3rem;
+    line-height: 1.5;
+  }
+  
+  p {
+    color: var(--para-color);
+  }
+  
+  /* Headings */
+  
+  .big-heading {
+    font-family: "Montserrat";
+    font-weight: 900;
+    size: 3.5rem;
+    line-height: 1.5;
+  }
+
+  .pic-nav{
+      height:90px;
+      width:90px;
+  }
+
+  .brand-title{
+      font-size:2.5rem;
+  }
+  
+  #title {
+    background-color: var(--primary-bg-color);
+    color: var(--text-color);
+    transition: all .7s;
+  }
+  
+  .container-fluid {
+    padding: 1% 15% 7%;
+  }
+  
+  /* Navigation Bar */
+  
+  .navbar {
+    padding:0px 0 4.5rem;
+  }
+  
+  .navbar-brand {
+    font-family: "Ubuntu";
+    font-size: 2.5rem;
+    font-weight: bold;
+  }
+  
+  .nav-item {
+    padding-left: 18px;
+  }
+  
+  .nav-link {
+    font-size: 1.2rem;
+    font-family: "Montserrat";
+    font-weight: 300;
+  }
+
+  
+  /* Download Buttons */
+  
+  .download-button {
+    margin: 5% 3% 5% 0;
+  }
+  
+  /* Title Image */
+  
+  .title-image {
+    width: 30%;
+    transform: rotate(25deg);
+    position: absolute;
+    right: 30%;
+    border-top-left-radius: 35px;
+    border-top-right-radius: 35px;
+    border-bottom-left-radius: 35px;
+    border-bottom-right-radius: 35px;
+    z-index:0;
+  }
+
+  /* FEATURES */
+
+#features{
+      z-index:1;
+      background-color: var(--text-color);
+      position:relative;
+      padding:7%;
+}
+
+.feature-box{
+    text-align: center;
+    padding:2% 1%;
+}
+
+.icon {
+  color:var(--primary-bg-color);
+  margin-bottom: 1rem;
+}
+
+.icon:hover{
+  color: var(--primary-bg-color);
+  transform: rotate(360deg);
+  transition:1s;
+}
+
+/* TESTIMONIALS */
+#testimonials{
+  text-align: center;
+  background-color: var(--primary-bg-color);
+  color: var(--text-color);
+}
+
+.carousel-item{
+  padding: 7% 10%;
+}
+
+.testimonial-image{
+  width: 10%;
+  border-radius:100%;
+  margin:20px;
+}
+
+.testimonial-text{
+  font-weight: 900;
+  line-height: 2;
+}
+
+/* PRESS */
+
+#press{
+  background-color: var(--primary-bg-color);
+  text-align: center;
+  padding-bottom: 3%;
+}
+
+.press-logo{
+  width: 15%;
+  margin: 20px 20px 50px;
+}
+
+/* PRICING */
+
+#pricing{
+  text-align: center;
+  padding: 100px;
+}
+
+.pricing-heading{
+  font-weight: 900;
+  font-size: 3rem;
+}
+
+.card-head{
+  font-weight: 900;
+  color: white;
+}
+.card-header{
+  background: var(--primary-bg-color) !important;
+}
+
+.price{
+  font-weight: 900;
+  font-size: 40px;
+}
+.card{
+  border:solid black 10px;
+}
+
+.sign-up:hover{
+  background-color: var(--primary-bg-color) !important;
+}
+
+/* .card-image{
+    width: 286px; 
+    height: 280px;
+} */
+
+#cta{
+  background-color: var(--primary-bg-color);
+  text-align: center;
+  padding: 7%;
+}
+
+#cta h3{
+  color: var(--text-color);
+  font-size: 3.5rem;
+  font-weight: 900;
+  line-height: 1.5;
+}
+
+#footer{
+  padding: 5%;
+  text-align: center;
+}
+
+.social-icon{
+  margin: 20px 15px;
+  font-size:30px;
+}
+
+.social-icon:hover{
+  color: var(--primary-bg-color);
+  transform: rotate(360deg);
+  transition:1s;
+}
+
+.copyright{
+    display: inline-block;
+    padding: 1%;
+    
+}
+.copyright:hover{
+  background-color: var(--primary-bg-color);
+  color: var(--text-color);
+  transition: 1s;
+  border-radius: 20px;
+}
+
+@media screen and (max-width:1028px){
+  #title{
+    text-align: center;
+  }
+
+  .title-image{
+    position: static;
+    transform: rotate(0);
+  }
+}
+
+/* CONTACTS */
+#contact p{
+  display: inline-block;
+  color: var(--text-color);
+  /* padding: 0px 10px; */
+}
+#contact{
+  text-align: center;
+  background-color:var(--primary-bg-color);
+  font-family: 'Montserrat';
+  padding: 10px;
+}
+#contact a{
+  color:burlywood;
+}
+
+.team{
+  font-weight: 900;
+}
+
+
+
+
+
+
+/* ANIMATIONS */
+
+.title-image{
+    animation: slide 2s 1;
+}
+
+@keyframes slide{
+    0%{
+        margin-right: -600px;
+        overflow:hidden;
+    }
+    50%{
+        margin-right: 0px;
+        transform: rotate(25deg);
+    }
+    75%{
+        transform: rotate(-25deg);
+    }
+    80%{
+        transform: rotate(25deg);
+    }
+    90%{
+        transform: rotate(-25deg);
+    }
+    100%{
+        transform: rotate(25deg);
+    }
+}
+
+.pic-nav,.brand-title{
+    animation: slide-left-in 1s 1;
+}
+
+@keyframes slide-left-in{
+    0%{
+        margin-left: -200px;
+    }
+    100%{
+        margin-left: 0px;
+    }
+}
+
+
+/* body{
+  transition: .4s;
+} */
+
+/* .nav1{
+    animation: fall1 1.5s 2.5s 1;
+}
+@keyframes fall1{
+    0%{
+        margin-top: 0px;
+    }
+    50%{
+        margin-top: -30px;
+        color: white;
+    }
+    100%{
+        margin-top: 0px;
+    }
+}
+
+.nav2{
+    animation: fall1 1.5s 4s 1;
+}
+@keyframes fall1{
+    0%{
+        margin-top: 0px;
+    }
+    50%{
+        margin-top: -30px;
+        color: white;
+    }
+    100%{
+        margin-top: 0px;
+    }
+}
+
+.nav3{
+    animation: fall1 1.5s 5.5s 1;
+} */
+/* @keyframes fall1{
+    0%{
+        margin-top: 0px;
+    }
+    50%{
+        margin-top: -30px;
+        color: white;
+    }
+    100%{
+        margin-top: 0px;
+    }
+} */
+
+
+
+.download-button{
+  animation: shake 0.3s 3s 1;
+}
+
+@keyframes shake{
+  0%{
+    transform: rotate(10deg);
+  }
+  25%{
+    transform: rotate(-10deg);
+  }
+  50%{
+    transform: rotate(10deg);
+  }
+  75%{
+    transform: rotate(-10deg);
+  }
+  100%{
+    transform: rotate(0deg);
+  }
+}
+
+
+.change-theme{
+  font-size: 1.3rem;
+  cursor:pointer;
+  transition: .7s;
+}
+
+body.dark-theme{
+
+  --text-color: white;
+  --para-color: #8f8f8f;
+  --primary-bg-color:black;
+  /* --secondary-bg-color:#9e1806; */
+}
+
+.welcome{
+background-color: black;
+}
+
+.welcome-page{
+  background-color: black;
+
+}
+
+
